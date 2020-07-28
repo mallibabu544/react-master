@@ -1,0 +1,10 @@
+.jumbotron {
+  background-color:#ff3;
+  color: #000000;
+  padding: 100px 0;
+  text-align: center;
+}
+
+.brand-icon{
+  font-size: 150px;
+}
