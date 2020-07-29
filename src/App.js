@@ -12,10 +12,7 @@ function App() {
   const APP_ID = "a9e97685";
   const APP_KEY = "9709c0401aa79a15eb622257a4358c0b";
 
-  useEffect(() => {
-    getRecipes();
-  }, []);
-
+  
   const getRecipes = async () => {
     const res = await Axios.get(`https://api.edamam.com/search?q=${search}&app_id=${APP_ID}&app_key=${APP_KEY}`);
 
@@ -31,6 +28,11 @@ function App() {
   const onSearchClick = () => {
     getRecipes();
   }
+
+  useEffect(() => {
+    getRecipes();
+  }, []);
+
   return (
     <div className="App">
 
